@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Error Already Used</title>
+</head>
+<body>
+    <p align="center">Error</p>
+    <div th:each="errorMessage: ${errorMessage}" align="center">
+        <p th:text="${errorMessage}"></p>
+    </div>
+    <div align="center" ><button><a href="/students">Go back</a></button></div>
+</body>
+</html>
